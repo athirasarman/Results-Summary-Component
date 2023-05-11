@@ -1,0 +1,6 @@
+@import '../constants/mixins.scss';
+
+.result-card-container{
+    @include for-phone-tablet();
+    @include for-desktop-big-desktop();
+}

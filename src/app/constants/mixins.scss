@@ -1,0 +1,65 @@
+@import '../constants/variables.scss';
+
+@mixin for-phone-tablet {
+  @media (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    .first-section{
+        display: flex;
+        flex:1;
+        padding: 16px 32px;
+        flex-direction: column;
+        border-bottom-left-radius: 32px;
+        border-bottom-right-radius: 32px;
+        background: linear-gradient($light-slate-blue, $light-royal-blue);
+        align-items: center;
+        color: $light-lavender;
+        font-weight: 500;
+        font-size: $font-size;
+        .your-result{
+            padding-bottom: 24px;
+        }
+        .circle{
+            margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient($violet-blue,$persian-blue);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .percentage{
+                color:$white;
+                h1{
+                    font-size: 3em;
+                    margin: 0;
+                }
+            }
+        }
+        .status{
+            color:$white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .description{
+            text-align: center;
+            padding-top: 12px;
+            font-size: 16px;
+        }
+    }
+    .second-section{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 32px;
+    }
+  }
+}
+
+@mixin for-desktop-big-desktop {
+  @media (min-width: 1025px) {
+  }
+}
