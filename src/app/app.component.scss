@@ -6,3 +6,17 @@
     align-items: center;
     background-color: $white;
 }
+@media (min-width: 1025px) {
+    main{
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .result-card-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+        }
+    }
+  }
